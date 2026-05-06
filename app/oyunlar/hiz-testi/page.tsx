@@ -110,15 +110,15 @@ function SpeedTestContent() {
       <div className="container mx-auto px-4 py-12">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-8">
-            <h1 className="text-3xl font-bold text-foreground mb-2">Hiz Testi</h1>
-            <p className="text-muted-foreground">Zamanla yaris! Ne kadar hizli cevaplayabilirsin?</p>
+            <h1 className="text-3xl font-bold text-foreground mb-2">Hız Testi</h1>
+            <p className="text-muted-foreground">Zamanla yarış! Ne kadar hızlı cevaplayabilirsin?</p>
           </div>
 
           <div className="rounded-2xl border border-border bg-card p-6 space-y-6">
             {/* Grade Selection */}
             <div>
               <label className="block text-sm font-medium text-foreground mb-3">
-                Sinif Sec
+                Sınıf Seç
               </label>
               <div className="grid grid-cols-4 gap-3">
                 {([5, 6, 7, 8] as const).map((grade) => {
@@ -137,7 +137,7 @@ function SpeedTestContent() {
                       }}
                       className={`py-3 rounded-xl font-bold border-2 transition-colors ${colors[grade]}`}
                     >
-                      {grade}. Sinif
+                      {grade}. Sınıf
                     </button>
                   );
                 })}
@@ -147,7 +147,7 @@ function SpeedTestContent() {
             {/* Topic Selection */}
             <div>
               <label className="block text-sm font-medium text-foreground mb-3">
-                Konu Sec
+                Konu Seç
               </label>
               <div className="grid grid-cols-2 gap-3">
                 <button
@@ -158,7 +158,7 @@ function SpeedTestContent() {
                       : "border-border text-foreground hover:bg-muted"
                   }`}
                 >
-                  Karisik
+                  Karışık
                 </button>
                 {topics.map((topic) => (
                   <button
@@ -179,7 +179,7 @@ function SpeedTestContent() {
             {/* Time Selection */}
             <div>
               <label className="block text-sm font-medium text-foreground mb-3">
-                Sure Sec
+                Süre Seç
               </label>
               <div className="grid grid-cols-3 gap-3">
                 {[30, 60, 90].map((time) => (
@@ -203,7 +203,7 @@ function SpeedTestContent() {
               onClick={startGame}
               className="w-full py-4 rounded-2xl bg-warning text-warning-foreground font-bold text-lg hover:bg-warning/90 transition-colors"
             >
-              Baslat
+              Başlat
             </button>
           </div>
         </div>
@@ -219,7 +219,7 @@ function SpeedTestContent() {
             <div className="w-32 h-32 rounded-full bg-warning flex items-center justify-center mx-auto mb-6 animate-pulse-scale">
               <span className="text-6xl font-bold text-warning-foreground">{countdown}</span>
             </div>
-            <p className="text-xl text-muted-foreground">Hazir ol!</p>
+            <p className="text-xl text-muted-foreground">Hazır ol!</p>
           </div>
         </div>
       </div>

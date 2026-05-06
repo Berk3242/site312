@@ -12,28 +12,28 @@ const gradeInfo = {
     borderColor: "border-grade-5",
     textColor: "text-grade-5",
     description:
-      "Dogal sayilar, kesirler ve temel aritmetik islemleri ogreniyoruz.",
+      "Doğal sayılar, kesirler ve temel aritmetik işlemleri öğreniyoruz.",
   },
   6: {
     color: "bg-grade-6",
     borderColor: "border-grade-6",
     textColor: "text-grade-6",
     description:
-      "Tam sayilar, oran-oranti ve cebire giris konularini isliyoruz.",
+      "Tam sayılar, oran-orantı ve cebire giriş konularını işliyoruz.",
   },
   7: {
     color: "bg-grade-7",
     borderColor: "border-grade-7",
     textColor: "text-grade-7",
     description:
-      "Denklemler, yuzde hesaplamalari ve geometri konularini ogreniyoruz.",
+      "Denklemler, yüzde hesaplamaları ve geometri konularını öğreniyoruz.",
   },
   8: {
     color: "bg-grade-8",
     borderColor: "border-grade-8",
     textColor: "text-grade-8",
     description:
-      "Uslu sayilar, karekok ve ileri matematik konularina hazirlanyoruz.",
+      "Üslü sayılar, karekök ve ileri matematik konularına hazırlanıyoruz.",
   },
 };
 
@@ -46,11 +46,11 @@ export default function SiniflarPage() {
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
               <h1 className="text-4xl font-bold text-foreground mb-4">
-                Sinif Secimleri
+                Sınıf Seçimleri
               </h1>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Kendi sinifini sec ve konulari kesfet. Her sinifta seni bekleyen
-                onlarca soru ve eglenceli oyunlar var!
+                Kendi sınıfını seç ve konuları keşfet. Her sınıfta seni bekleyen
+                onlarca soru ve eğlenceli oyunlar var!
               </p>
             </div>
 
@@ -73,7 +73,7 @@ export default function SiniflarPage() {
                         </div>
                         <div>
                           <h2 className="text-2xl font-bold text-white">
-                            {grade}. Sinif
+                            {grade}. Sınıf
                           </h2>
                           <p className="text-white/80 text-sm">
                             {topics.length} Konu
@@ -115,7 +115,7 @@ export default function SiniflarPage() {
                           href={`/oyunlar/quiz?sinif=${grade}`}
                           className="flex-1 py-3 rounded-xl border-2 border-border text-foreground font-semibold text-center hover:bg-muted transition-colors"
                         >
-                          Hizli Quiz
+                          Hızlı Quiz
                         </Link>
                       </div>
                     </div>

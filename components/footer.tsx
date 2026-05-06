@@ -12,25 +12,25 @@ export function Footer() {
                 M
               </div>
               <span className="text-xl font-bold text-foreground">
-                MatematikOyun
+                Proje: Math
               </span>
             </div>
             <p className="text-sm text-muted-foreground">
-              Ortaokul ogrencileri icin eglenceli ve interaktif matematik
-              ogrenme platformu.
+              Ortaokul öğrencileri için eğlenceli ve interaktif matematik
+              öğrenme platformu.
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-semibold text-foreground mb-4">Hizli Erisim</h3>
+            <h3 className="font-semibold text-foreground mb-4">Hızlı Erişim</h3>
             <ul className="space-y-2">
               <li>
                 <Link
                   href="/siniflar"
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  Siniflar
+                  Sınıflar
                 </Link>
               </li>
               <li>
@@ -54,14 +54,14 @@ export function Footer() {
 
           {/* Grades */}
           <div>
-            <h3 className="font-semibold text-foreground mb-4">Siniflar</h3>
+            <h3 className="font-semibold text-foreground mb-4">Sınıflar</h3>
             <ul className="space-y-2">
               <li>
                 <Link
                   href="/sinif/5"
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  5. Sinif
+                  5. Sınıf
                 </Link>
               </li>
               <li>
@@ -69,7 +69,7 @@ export function Footer() {
                   href="/sinif/6"
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  6. Sinif
+                  6. Sınıf
                 </Link>
               </li>
               <li>
@@ -77,7 +77,7 @@ export function Footer() {
                   href="/sinif/7"
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  7. Sinif
+                  7. Sınıf
                 </Link>
               </li>
               <li>
@@ -85,7 +85,7 @@ export function Footer() {
                   href="/sinif/8"
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  8. Sinif
+                  8. Sınıf
                 </Link>
               </li>
             </ul>
@@ -93,14 +93,14 @@ export function Footer() {
 
           {/* Game Types */}
           <div>
-            <h3 className="font-semibold text-foreground mb-4">Oyun Turleri</h3>
+            <h3 className="font-semibold text-foreground mb-4">Oyun Türleri</h3>
             <ul className="space-y-2">
               <li>
                 <Link
                   href="/oyunlar?tur=tek"
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  Tek Kisilik
+                  Tek Kişilik
                 </Link>
               </li>
               <li>
@@ -108,7 +108,7 @@ export function Footer() {
                   href="/oyunlar?tur=cift"
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  Cift Kisilik
+                  Çift Kişilik
                 </Link>
               </li>
               <li>
@@ -116,7 +116,7 @@ export function Footer() {
                   href="/oyunlar?tur=hiz"
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  Hiz Testi
+                  Hız Testi
                 </Link>
               </li>
             </ul>
@@ -125,10 +125,10 @@ export function Footer() {
 
         <div className="mt-8 pt-8 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground">
-            2024 MatematikOyun. Tum haklari saklidir.
+            2026 Proje: Math. Tüm hakları saklıdır.
           </p>
           <p className="text-sm font-medium text-foreground">
-            Yusuf Sefa Yesil
+            Yusuf Sefa Yeşil
           </p>
         </div>
       </div>

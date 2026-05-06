@@ -142,15 +142,15 @@ function MatchingGameContent() {
       <div className="container mx-auto px-4 py-12">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-8">
-            <h1 className="text-3xl font-bold text-foreground mb-2">Eslestirme Oyunu</h1>
-            <p className="text-muted-foreground">Soru ve cevaplari dogru sekilde eslestir!</p>
+            <h1 className="text-3xl font-bold text-foreground mb-2">Eşleştirme Oyunu</h1>
+            <p className="text-muted-foreground">Soru ve cevapları doğru şekilde eşleştir!</p>
           </div>
 
           <div className="rounded-2xl border border-border bg-card p-6 space-y-6">
             {/* Grade Selection */}
             <div>
               <label className="block text-sm font-medium text-foreground mb-3">
-                Sinif Sec
+                Sınıf Seç
               </label>
               <div className="grid grid-cols-4 gap-3">
                 {([5, 6, 7, 8] as const).map((grade) => {
@@ -169,7 +169,7 @@ function MatchingGameContent() {
                       }}
                       className={`py-3 rounded-xl font-bold border-2 transition-colors ${colors[grade]}`}
                     >
-                      {grade}. Sinif
+                      {grade}. Sınıf
                     </button>
                   );
                 })}
@@ -179,7 +179,7 @@ function MatchingGameContent() {
             {/* Topic Selection */}
             <div>
               <label className="block text-sm font-medium text-foreground mb-3">
-                Konu Sec
+                Konu Seç
               </label>
               <div className="grid grid-cols-2 gap-3">
                 <button
@@ -190,7 +190,7 @@ function MatchingGameContent() {
                       : "border-border text-foreground hover:bg-muted"
                   }`}
                 >
-                  Karisik
+                  Karışık
                 </button>
                 {topics.map((topic) => (
                   <button
@@ -213,7 +213,7 @@ function MatchingGameContent() {
               onClick={startGame}
               className="w-full py-4 rounded-2xl bg-success text-success-foreground font-bold text-lg hover:bg-success/90 transition-colors"
             >
-              Oyunu Baslat
+              Oyunu Başlat
             </button>
           </div>
         </div>
@@ -236,7 +236,7 @@ function MatchingGameContent() {
             </div>
             
             <h1 className="text-2xl font-bold text-foreground mb-2">Tebrikler!</h1>
-            <p className="text-lg text-muted-foreground mb-6">Tum eslestirmeleri tamamladin!</p>
+            <p className="text-lg text-muted-foreground mb-6">Tüm eşleştirmeleri tamamladın!</p>
             
             <div className="grid grid-cols-3 gap-4 mb-8">
               <div className="rounded-xl bg-primary/10 p-4">
@@ -266,7 +266,7 @@ function MatchingGameContent() {
                 href="/oyunlar"
                 className="w-full py-3 rounded-xl border-2 border-border text-foreground font-semibold hover:bg-muted transition-colors text-center"
               >
-                Oyunlara Don
+                Oyunlara Dön
               </Link>
             </div>
           </div>
@@ -290,7 +290,7 @@ function MatchingGameContent() {
             </div>
             <div className="text-center">
               <div className="text-2xl font-bold text-success">{matchedPairs}/{totalPairs}</div>
-              <div className="text-xs text-muted-foreground">Eslesen</div>
+              <div className="text-xs text-muted-foreground">Eşleşen</div>
             </div>
             <div className="text-center">
               <div className="text-2xl font-bold text-secondary">{mistakes}</div>

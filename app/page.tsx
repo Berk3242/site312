@@ -9,30 +9,30 @@ const grades = [
   {
     grade: 5,
     color: "bg-grade-5",
-    topics: ["Dogal Sayilar", "Kesirler", "Carpma-Bolme"],
+    topics: ["Doğal Sayılar", "Kesirler", "Çarpma-Bölme"],
   },
   {
     grade: 6,
     color: "bg-grade-6",
-    topics: ["Tam Sayilar", "Oran-Oranti", "OBEB-OKEK"],
+    topics: ["Tam Sayılar", "Oran-Orantı", "OBEB-OKEK"],
   },
   {
     grade: 7,
     color: "bg-grade-7",
-    topics: ["Yuzde", "Denklemler", "Cember-Daire"],
+    topics: ["Yüzde", "Denklemler", "Çember-Daire"],
   },
   {
     grade: 8,
     color: "bg-grade-8",
-    topics: ["Uslu Sayilar", "Karekok", "Pitagor"],
+    topics: ["Üslü Sayılar", "Karekök", "Pisagor"],
   },
 ];
 
 const gameTypes = [
   {
     id: "quiz",
-    title: "Quiz Yarismasi",
-    description: "Sorulari dogru cevapla ve puan kazan!",
+    title: "Quiz Yarışması",
+    description: "Soruları doğru cevapla ve puan kazan!",
     icon: (
       <svg
         className="w-8 h-8"
@@ -52,8 +52,8 @@ const gameTypes = [
   },
   {
     id: "hiz",
-    title: "Hiz Testi",
-    description: "Zamanla yaris, en hizli sen ol!",
+    title: "Hız Testi",
+    description: "Zamanla yarış, en hızlı sen ol!",
     icon: (
       <svg
         className="w-8 h-8"
@@ -73,8 +73,8 @@ const gameTypes = [
   },
   {
     id: "eslestirme",
-    title: "Eslestirme",
-    description: "Soru ve cevaplari eslestir!",
+    title: "Eşleştirme",
+    description: "Soru ve cevapları eşleştir!",
     icon: (
       <svg
         className="w-8 h-8"
@@ -94,8 +94,8 @@ const gameTypes = [
   },
   {
     id: "duello",
-    title: "2 Kisilik Duello",
-    description: "Arkadasinla yaris, kim daha iyi?",
+    title: "2 Kişilik Düello",
+    description: "Arkadaşınla yarış, kim daha iyi?",
     icon: (
       <svg
         className="w-8 h-8"
@@ -122,26 +122,26 @@ function HeroSection() {
         <div className="flex flex-col lg:flex-row items-center gap-12">
           <div className="flex-1 text-center lg:text-left">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 text-balance">
-              Matematik Ogrenmek{" "}
-              <span className="text-primary">Hic Bu Kadar</span>{" "}
-              <span className="text-secondary">Eglenceli</span> Olmamisti!
+              Matematik Öğrenmek{" "}
+              <span className="text-primary">Hiç Bu Kadar</span>{" "}
+              <span className="text-secondary">Eğlenceli</span> Olmamıştı!
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto lg:mx-0 text-pretty">
-              5, 6, 7 ve 8. sinif matematik konularini interaktif oyunlarla
-              ogren. Tek basina ya da arkadasinla birlikte oyna!
+              5, 6, 7 ve 8. sınıf matematik konularını interaktif oyunlarla
+              öğren. Tek başına ya da arkadaşınla birlikte oyna!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Link
                 href="/siniflar"
                 className="rounded-2xl bg-primary px-8 py-4 text-lg font-semibold text-primary-foreground hover:bg-primary/90 transition-all hover:scale-105"
               >
-                Hemen Basla
+                Hemen Başla
               </Link>
               <Link
                 href="/oyunlar"
                 className="rounded-2xl border-2 border-primary px-8 py-4 text-lg font-semibold text-primary hover:bg-primary hover:text-primary-foreground transition-all"
               >
-                Oyunlari Kesfet
+                Oyunları Keşfet
               </Link>
             </div>
           </div>
@@ -192,10 +192,10 @@ function GradesSection() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Sinifini Sec
+            Sınıfını Seç
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Her sinif seviyesine uygun konular ve sorular seni bekliyor
+            Her sınıf seviyesine uygun konular ve sorular seni bekliyor
           </p>
         </div>
 
@@ -215,7 +215,7 @@ function GradesSection() {
                 {item.grade}
               </div>
               <h3 className="text-xl font-bold text-foreground mb-2">
-                {item.grade}. Sinif
+                {item.grade}. Sınıf
               </h3>
               <ul className="space-y-1">
                 {item.topics.map((topic) => (
@@ -225,7 +225,7 @@ function GradesSection() {
                 ))}
               </ul>
               <div className="mt-4 text-primary font-medium text-sm group-hover:translate-x-1 transition-transform">
-                Konulari Gor &rarr;
+                Konuları Gör &rarr;
               </div>
             </Link>
           ))}
@@ -241,10 +241,10 @@ function GamesSection() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Oyun Turleri
+            Oyun Türleri
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Farkli oyun modlariyla matematik pratigi yap
+            Farklı oyun modlarıyla matematik pratiği yap
           </p>
         </div>
 
@@ -272,10 +272,10 @@ function GamesSection() {
 
 function StatsSection() {
   const stats = [
-    { value: "20+", label: "Farkli Konu" },
-    { value: "Sonsuz", label: "Soru Cesidi" },
+    { value: "20+", label: "Farklı Konu" },
+    { value: "Sonsuz", label: "Soru Çeşidi" },
     { value: "4", label: "Oyun Modu" },
-    { value: "4", label: "Sinif Seviyesi" },
+    { value: "4", label: "Sınıf Seviyesi" },
   ];
 
   return (
@@ -301,7 +301,7 @@ function FeaturesSection() {
     {
       title: "Algoritmik Sorular",
       description:
-        "Sorular otomatik olarak uretilir, her seferinde farkli sorularla karsilasirsin!",
+        "Sorular otomatik olarak üretilir, her seferinde farklı sorularla karşılaşırsın!",
       icon: (
         <svg
           className="w-6 h-6"
@@ -319,9 +319,9 @@ function FeaturesSection() {
       ),
     },
     {
-      title: "Ilerleme Takibi",
+      title: "İlerleme Takibi",
       description:
-        "Tum basarilarini ve ilerlemenizi profilinde gorebilirsin.",
+        "Tüm başarılarını ve ilerlemenizi profilinde görebilirsin.",
       icon: (
         <svg
           className="w-6 h-6"
@@ -339,9 +339,9 @@ function FeaturesSection() {
       ),
     },
     {
-      title: "Cift Kisilik Modlar",
+      title: "Çift Kişilik Modlar",
       description:
-        "Arkadasinla ayni bilgisayarda yarisin, kim daha iyi matematikte?",
+        "Arkadaşınla aynı bilgisayarda yarışın, kim daha iyi matematikte?",
       icon: (
         <svg
           className="w-6 h-6"
@@ -365,7 +365,7 @@ function FeaturesSection() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Neden MatematikOyun?
+            Neden Proje: Math?
           </h2>
         </div>
 

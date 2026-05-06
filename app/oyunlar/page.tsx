@@ -8,8 +8,8 @@ import { UserProvider } from "@/lib/user-context";
 const singlePlayerGames = [
   {
     id: "quiz",
-    title: "Quiz Yarismasi",
-    description: "10 soru cevapla, puan kazan! Her dogru cevap sana puan kazandirir.",
+    title: "Quiz Yarışması",
+    description: "10 soru cevapla, puan kazan! Her doğru cevap sana puan kazandırır.",
     icon: (
       <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -20,8 +20,8 @@ const singlePlayerGames = [
   },
   {
     id: "hiz-testi",
-    title: "Hiz Testi",
-    description: "60 saniyede kac soru cevaplayabilirsin? Zamanla yaris!",
+    title: "Hız Testi",
+    description: "60 saniyede kaç soru cevaplayabilirsin? Zamanla yarış!",
     icon: (
       <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -32,8 +32,8 @@ const singlePlayerGames = [
   },
   {
     id: "eslestirme",
-    title: "Eslestirme Oyunu",
-    description: "Soru ve cevaplari dogru sekilde eslestir. Hafiza ve matematik bir arada!",
+    title: "Eşleştirme Oyunu",
+    description: "Soru ve cevapları doğru şekilde eşleştir. Hafıza ve matematik bir arada!",
     icon: (
       <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
@@ -47,8 +47,8 @@ const singlePlayerGames = [
 const multiPlayerGames = [
   {
     id: "duello",
-    title: "2 Kisilik Duello",
-    description: "Arkadasinla ayni bilgisayarda yaris! Kim daha hizli cevapliyor?",
+    title: "2 Kişilik Düello",
+    description: "Arkadaşınla aynı bilgisayarda yarış! Kim daha hızlı cevaplıyor?",
     icon: (
       <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
@@ -59,8 +59,8 @@ const multiPlayerGames = [
   },
   {
     id: "yaris",
-    title: "Matematik Yarisi",
-    description: "Iki oyuncu, bir yaris! Ilk 10 puana ulaşan kazanir.",
+    title: "Matematik Yarışı",
+    description: "İki oyuncu, bir yarış! İlk 10 puana ulaşan kazanır.",
     icon: (
       <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -80,10 +80,10 @@ export default function OyunlarPage() {
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
               <h1 className="text-4xl font-bold text-foreground mb-4">
-                Oyun Modlari
+                Oyun Modları
               </h1>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Matematik pratigi yapmanin en eglenceli yolu! Tek basina veya arkadasinla oyna.
+                Matematik pratiği yapmanın en eğlenceli yolu! Tek başına veya arkadaşınla oyna.
               </p>
             </div>
 
@@ -96,7 +96,7 @@ export default function OyunlarPage() {
                   </svg>
                 </div>
                 <h2 className="text-2xl font-bold text-foreground">
-                  Tek Kisilik Oyunlar
+                  Tek Kişilik Oyunlar
                 </h2>
               </div>
 
@@ -133,7 +133,7 @@ export default function OyunlarPage() {
                   </svg>
                 </div>
                 <h2 className="text-2xl font-bold text-foreground">
-                  Cift Kisilik Oyunlar
+                  Çift Kişilik Oyunlar
                 </h2>
               </div>
 
@@ -168,7 +168,7 @@ export default function OyunlarPage() {
             {/* Grade Selection */}
             <section className="mt-16 rounded-2xl bg-muted/50 p-8">
               <h2 className="text-xl font-bold text-foreground mb-4 text-center">
-                Sinifina Gore Oyna
+                Sınıfına Göre Oyna
               </h2>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 {[5, 6, 7, 8].map((grade) => {
@@ -184,7 +184,7 @@ export default function OyunlarPage() {
                       href={`/oyunlar/quiz?sinif=${grade}`}
                       className={`${colors[grade as keyof typeof colors]} text-white rounded-xl py-4 text-center font-bold text-lg transition-colors`}
                     >
-                      {grade}. Sinif
+                      {grade}. Sınıf
                     </Link>
                   );
                 })}

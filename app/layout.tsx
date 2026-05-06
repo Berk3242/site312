@@ -13,18 +13,18 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "MatematikOyun - Eglenceli Matematik Ogrenme Platformu",
+  title: "Proje: Math - Eğlenceli Matematik Öğrenme Platformu",
   description:
-    "Ortaokul ogrencileri icin interaktif matematik oyunlari ve konu anlatimlari. 5, 6, 7 ve 8. sinif matematik konularini oyunlarla ogren!",
+    "Ortaokul öğrencileri için interaktif matematik oyunları ve konu anlatımları. 5, 6, 7 ve 8. sınıf matematik konularını oyunlarla öğren!",
   keywords: [
     "matematik",
     "oyun",
-    "egitim",
+    "eğitim",
     "ortaokul",
-    "5. sinif",
-    "6. sinif",
-    "7. sinif",
-    "8. sinif",
+    "5. sınıf",
+    "6. sınıf",
+    "7. sınıf",
+    "8. sınıf",
   ],
 };
 

@@ -16,7 +16,7 @@ export function Header() {
             M
           </div>
           <span className="text-xl font-bold text-foreground hidden sm:inline">
-            MatematikOyun
+            Proje: Math
           </span>
         </Link>
 
@@ -26,7 +26,7 @@ export function Header() {
             href="/siniflar"
             className="text-muted-foreground hover:text-foreground transition-colors font-medium"
           >
-            Siniflar
+            Sınıflar
           </Link>
           <Link
             href="/oyunlar"
@@ -64,7 +64,7 @@ export function Header() {
                 onClick={logout}
                 className="hidden sm:block text-sm text-muted-foreground hover:text-foreground transition-colors"
               >
-                Cikis
+                Çıkış
               </button>
             </div>
           ) : (
@@ -72,7 +72,7 @@ export function Header() {
               href="/giris"
               className="rounded-xl bg-primary px-4 py-2 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-colors"
             >
-              Giris Yap
+              Giriş Yap
             </Link>
           )}
 
@@ -103,7 +103,7 @@ export function Header() {
               className="rounded-lg px-4 py-2 text-foreground hover:bg-muted transition-colors"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Siniflar
+              Sınıflar
             </Link>
             <Link
               href="/oyunlar"
@@ -127,7 +127,7 @@ export function Header() {
                 }}
                 className="rounded-lg px-4 py-2 text-left text-muted-foreground hover:bg-muted transition-colors"
               >
-                Cikis Yap
+                Çıkış Yap
               </button>
             )}
           </nav>

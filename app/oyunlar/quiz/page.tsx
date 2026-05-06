@@ -93,15 +93,15 @@ function QuizGameContent() {
       <div className="container mx-auto px-4 py-12">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-8">
-            <h1 className="text-3xl font-bold text-foreground mb-2">Quiz Yarismasi</h1>
-            <p className="text-muted-foreground">Sinifini ve konunu sec, basla!</p>
+            <h1 className="text-3xl font-bold text-foreground mb-2">Quiz Yarışması</h1>
+            <p className="text-muted-foreground">Sınıfını ve konunu seç, başla!</p>
           </div>
 
           <div className="rounded-2xl border border-border bg-card p-6 space-y-6">
             {/* Grade Selection */}
             <div>
               <label className="block text-sm font-medium text-foreground mb-3">
-                Sinif Sec
+                Sınıf Seç
               </label>
               <div className="grid grid-cols-4 gap-3">
                 {([5, 6, 7, 8] as const).map((grade) => {
@@ -120,7 +120,7 @@ function QuizGameContent() {
                       }}
                       className={`py-3 rounded-xl font-bold border-2 transition-colors ${colors[grade]}`}
                     >
-                      {grade}. Sinif
+                      {grade}. Sınıf
                     </button>
                   );
                 })}
@@ -130,7 +130,7 @@ function QuizGameContent() {
             {/* Topic Selection */}
             <div>
               <label className="block text-sm font-medium text-foreground mb-3">
-                Konu Sec (Opsiyonel)
+                Konu Seç (Opsiyonel)
               </label>
               <div className="grid grid-cols-2 gap-3">
                 <button
@@ -141,7 +141,7 @@ function QuizGameContent() {
                       : "border-border text-foreground hover:bg-muted"
                   }`}
                 >
-                  Karisik
+                  Karışık
                 </button>
                 {topics.map((topic) => (
                   <button
@@ -164,7 +164,7 @@ function QuizGameContent() {
               onClick={startGame}
               className="w-full py-4 rounded-2xl bg-primary text-primary-foreground font-bold text-lg hover:bg-primary/90 transition-colors"
             >
-              Oyunu Baslat
+              Oyunu Başlat
             </button>
           </div>
         </div>
@@ -178,16 +178,16 @@ function QuizGameContent() {
     let messageColor = "";
     
     if (percentage >= 80) {
-      message = "Mukemmel! Harika bir performans!";
+      message = "Mükemmel! Harika bir performans!";
       messageColor = "text-success";
     } else if (percentage >= 60) {
-      message = "Iyi is! Biraz daha pratik yaparsan daha da iyi olacaksin.";
+      message = "İyi iş! Biraz daha pratik yaparsan daha da iyi olacaksın.";
       messageColor = "text-primary";
     } else if (percentage >= 40) {
-      message = "Fena degil, ama gelistirmeye devam et!";
+      message = "Fena değil, ama geliştirmeye devam et!";
       messageColor = "text-warning";
     } else {
-      message = "Konulari tekrar gozden gecir ve tekrar dene!";
+      message = "Konuları tekrar gözden geçir ve tekrar dene!";
       messageColor = "text-secondary";
     }
 
@@ -209,11 +209,11 @@ function QuizGameContent() {
               </div>
               <div className="rounded-xl bg-muted p-4">
                 <div className="text-2xl font-bold text-success">{correctAnswers}</div>
-                <div className="text-sm text-muted-foreground">Dogru</div>
+                <div className="text-sm text-muted-foreground">Doğru</div>
               </div>
               <div className="rounded-xl bg-muted p-4">
                 <div className="text-2xl font-bold text-secondary">{questions.length - correctAnswers}</div>
-                <div className="text-sm text-muted-foreground">Yanlis</div>
+                <div className="text-sm text-muted-foreground">Yanlış</div>
               </div>
             </div>
 
@@ -244,7 +244,7 @@ function QuizGameContent() {
                 href="/oyunlar"
                 className="w-full py-3 rounded-xl border-2 border-border text-foreground font-semibold hover:bg-muted transition-colors text-center"
               >
-                Oyunlara Don
+                Oyunlara Dön
               </Link>
             </div>
           </div>
@@ -338,14 +338,14 @@ function QuizGameContent() {
                   <svg className="w-5 h-5 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
-                  <span className="font-bold text-success">Dogru!</span>
+                  <span className="font-bold text-success">Doğru!</span>
                 </>
               ) : (
                 <>
                   <svg className="w-5 h-5 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                   </svg>
-                  <span className="font-bold text-secondary">Yanlis!</span>
+                  <span className="font-bold text-secondary">Yanlış!</span>
                 </>
               )}
             </div>
@@ -359,7 +359,7 @@ function QuizGameContent() {
             onClick={nextQuestion}
             className="w-full py-4 rounded-2xl bg-primary text-primary-foreground font-bold text-lg hover:bg-primary/90 transition-colors"
           >
-            {currentQuestionIndex < questions.length - 1 ? "Sonraki Soru" : "Sonuclari Gor"}
+            {currentQuestionIndex < questions.length - 1 ? "Sonraki Soru" : "Sonuçları Gör"}
           </button>
         )}
       </div>

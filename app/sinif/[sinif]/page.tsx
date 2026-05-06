@@ -12,33 +12,33 @@ const gradeInfo = {
     color: "bg-grade-5",
     lightColor: "bg-grade-5/10",
     textColor: "text-grade-5",
-    title: "5. Sinif Matematik",
+    title: "5. Sınıf Matematik",
     description:
-      "Bu sinifta dogal sayilar, kesirler ve temel dort islem konularini ogreneceksin. Matematik temellerin burada atiliyor!",
+      "Bu sınıfta doğal sayılar, kesirler ve temel dört işlem konularını öğreneceksin. Matematik temellerin burada atılıyor!",
   },
   6: {
     color: "bg-grade-6",
     lightColor: "bg-grade-6/10",
     textColor: "text-grade-6",
-    title: "6. Sinif Matematik",
+    title: "6. Sınıf Matematik",
     description:
-      "Tam sayilar, oran-oranti ve cebirin temelleri bu sinifta ogreniliyor. OBEB ve OKEK konularina hakim ol!",
+      "Tam sayılar, oran-orantı ve cebirin temelleri bu sınıfta öğreniliyor. OBEB ve OKEK konularına hakim ol!",
   },
   7: {
     color: "bg-grade-7",
     lightColor: "bg-grade-7/10",
     textColor: "text-grade-7",
-    title: "7. Sinif Matematik",
+    title: "7. Sınıf Matematik",
     description:
-      "Denklemler, yuzde hesaplamalari ve geometri bu sinifin temel konulari. Cember ve daire problemlerini coz!",
+      "Denklemler, yüzde hesaplamaları ve geometri bu sınıfın temel konuları. Çember ve daire problemlerini çöz!",
   },
   8: {
     color: "bg-grade-8",
     lightColor: "bg-grade-8/10",
     textColor: "text-grade-8",
-    title: "8. Sinif Matematik",
+    title: "8. Sınıf Matematik",
     description:
-      "Liseye hazirlik sinifi! Uslu sayilar, karekok, denklem sistemleri ve Pitagor teoremi seni bekliyor.",
+      "Liseye hazırlık sınıfı! Üslü sayılar, karekök, denklem sistemleri ve Pisagor teoremi seni bekliyor.",
   },
 };
 
@@ -58,16 +58,16 @@ export default function SinifPage({
           <main className="flex-1 flex items-center justify-center">
             <div className="text-center">
               <h1 className="text-4xl font-bold text-foreground mb-4">
-                Sinif Bulunamadi
+                Sınıf Bulunamadı
               </h1>
               <p className="text-muted-foreground mb-8">
-                Aradiginiz sinif mevcut degil.
+                Aradığınız sınıf mevcut değil.
               </p>
               <Link
                 href="/siniflar"
                 className="rounded-xl bg-primary px-6 py-3 text-primary-foreground font-semibold"
               >
-                Siniflara Don
+                Sınıflara Dön
               </Link>
             </div>
           </main>
@@ -105,7 +105,7 @@ export default function SinifPage({
                     d="M15 19l-7-7 7-7"
                   />
                 </svg>
-                Tum Siniflar
+                Tüm Sınıflar
               </Link>
               <div className="flex items-center gap-6">
                 <div className="w-24 h-24 rounded-2xl bg-white/20 backdrop-blur flex items-center justify-center">
@@ -129,7 +129,7 @@ export default function SinifPage({
                 href={`/oyunlar/quiz?sinif=${grade}`}
                 className={`px-6 py-2 rounded-xl ${info.color} text-white font-medium hover:opacity-90 transition-opacity`}
               >
-                Tum Konular Quiz
+                Tüm Konular Quiz
               </Link>
             </div>
 
@@ -157,13 +157,13 @@ export default function SinifPage({
                         href={`/sinif/${grade}/${topic.id}`}
                         className="w-full py-3 rounded-xl border-2 border-border text-foreground font-medium text-center hover:bg-muted transition-colors"
                       >
-                        Konu Anlatimi
+                        Konu Anlatımı
                       </Link>
                       <Link
                         href={`/oyunlar/quiz?sinif=${grade}&konu=${topic.id}`}
                         className={`w-full py-3 rounded-xl ${info.color} text-white font-medium text-center hover:opacity-90 transition-opacity`}
                       >
-                        Quiz Baslat
+                        Quiz Başlat
                       </Link>
                     </div>
                   </div>
@@ -193,10 +193,10 @@ export default function SinifPage({
                   </svg>
                 </div>
                 <h3 className="text-lg font-bold text-foreground mb-2">
-                  Hiz Testi
+                  Hız Testi
                 </h3>
                 <p className="text-sm text-muted-foreground">
-                  Zamanla yaris, hizli cevap ver!
+                  Zamanla yarış, hızlı cevap ver!
                 </p>
               </Link>
 
@@ -220,10 +220,10 @@ export default function SinifPage({
                   </svg>
                 </div>
                 <h3 className="text-lg font-bold text-foreground mb-2">
-                  Eslestirme Oyunu
+                  Eşleştirme Oyunu
                 </h3>
                 <p className="text-sm text-muted-foreground">
-                  Soru ve cevaplari eslestir!
+                  Soru ve cevapları eşleştir!
                 </p>
               </Link>
 
@@ -247,10 +247,10 @@ export default function SinifPage({
                   </svg>
                 </div>
                 <h3 className="text-lg font-bold text-foreground mb-2">
-                  2 Kisilik Duello
+                  2 Kişilik Düello
                 </h3>
                 <p className="text-sm text-muted-foreground">
-                  Arkadasinla yaris!
+                  Arkadaşınla yarış!
                 </p>
               </Link>
             </div>
